@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="frontend/liblary/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="frontend/liblary/xzoom/xzoom.css">
+    <link rel="stylesheet" href="frontend/liblary/gijgo/css/gijgo.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="frontend/style/main.css">
+</head>
+<body>
+    <!-- navbar -->
+    
+    <!-- end navbar -->
+
+
+    <!-- main -->
+    <main>
+        <div class="section-success ">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col text-center">
+                        <img src="frontend/images/mail.png" alt="">
+                        <h1 class="successAlert">Yay! Success</h1>
+                        <p class="successSugest">We've sent you email for trip instruction <br> please read it as well</p>
+                        <a href="index.html" class="btn btn-back-home px-5 mt-4">Home Page</a>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </main>
+    <!-- end main -->
+
+    <script src="frontend/script/jquery.js"></script>
+    <script src="frontend/liblary/bootstrap/js/bootstrap.js"></script>
+    <script src="frontend/liblary/retina/retina.min.js"></script>
+    <script src="frontend/liblary/xzoom/xzoom.min.js"></script>
+    <script src="frontend/liblary/gijgo/js/gijgo.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".xzoom, .xzoom-gallery").xzoom({
+                zoomwidth: 500,
+                title: false,
+                tint: '#333',
+                Xoffset: 15 
+            });
+            $('.datepicker').datepicker({
+                uilibrary: 'bootstrap4',
+                icons:{
+                    // rightIcon: '<img width="15px" src="frontend/images/date.png" alt="">'
+                }
+            }); 
+        });
+    </script>
+</body>
+</html>
